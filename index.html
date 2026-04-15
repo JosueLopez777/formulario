@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -33,7 +32,8 @@
         input, select, textarea { width: 100%; background: rgba(255,255,255,0.05); border: 1px solid var(--border); padding: 16px; border-radius: 12px; color: #fff; margin-bottom: 15px; font-family: inherit; }
         select option { background: #05070a; }
 
-        .btn-submit { width: 100%; padding: 20px; background: linear-gradient(90deg, var(--fuxion-blue), #007AFF); border: none; border-radius: 15px; color: #fff; font-weight: 700; font-size: 18px; cursor: pointer; text-transform: uppercase; }
+        .btn-submit { width: 100%; padding: 20px; background: linear-gradient(90deg, var(--fuxion-blue), #007AFF); border: none; border-radius: 15px; color: #fff; font-weight: 700; font-size: 18px; cursor: pointer; text-transform: uppercase; transition: transform 0.2s; }
+        .btn-submit:active { transform: scale(0.98); }
         
         @media (max-width: 600px) { .stats-grid, .input-grid { grid-template-columns: 1fr; } }
     </style>
@@ -98,7 +98,6 @@
     </div>
 
     <script>
-        // URL ACTUALIZADA
         const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbynWhui3Q_YXNbriFRozlmuiO3bwbHX-UpYrgNl3Ef6c7YQdJUDbzXdxSUzz2wq78fScA/exec';
         
         document.getElementById('mentorshipForm').addEventListener('submit', function(e) {
@@ -127,10 +126,10 @@
                 body: JSON.stringify(formData)
             })
             .then(() => {
-                window.location.href = 'https://chat.whatsapp.com/BOMREKm2ZxtL5SFC3yt3p1';
+                window.location.href = 'https://chat.whatsapp.com/KtBu7mszVBOE2oMdf0bFl1';
             })
             .catch(() => {
-                window.location.href = 'https://chat.whatsapp.com/BOMREKm2ZxtL5SFC3yt3p1';
+                window.location.href = 'https://chat.whatsapp.com/KtBu7mszVBOE2oMdf0bFl1';
             });
         });
     </script>
